@@ -97,22 +97,3 @@ For any inquiries, feel free to reach out to me at irashettg@gmail.com
 
 ---
 
-# 🎉 Task for Day-2 Project: Complete the tasks below and win exciting prizes! 🎉
-
-```
-    1. Add a feature of typing indicator when the bot is responding to the user. 💬
-    2. Enable sending messages through the send button and by pressing the Enter key. 📩
-    3. Add any new features you want to enhance this chatbot. 🚀
-
-    🏆 Steps to claim your prize:
-    1. Create the project.
-    2. Post about it on LinkedIn with the hashtags #gdg and #gdgnkocet + tag to our GDG NKOCET and Me in the post.
-       - My Profile Link : https://www.linkedin.com/in/ghansham-irshetti/
-       - GDG NKOCET Profile Link : https://www.linkedin.com/company/gdg-nkocet/
-    3. Tag me in your post to get an exciting prize! 🏅
-
-    What is the prize for this project?
-    1. A shout-out on my LinkedIn profile from GDG NKOCET
-    2. A detail notes of web development + DSA.
-    Happy Coding! 😇
-```

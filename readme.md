@@ -52,21 +52,40 @@ The presentations from both days are available for reference. These contain the 
 
 ---
 
-# GDG Social Media :
+## Social Media :
 - 📧 Email: gdscnkocet@orchidengg.ac.in
 - 📞 Contact: @Laxmi Chavan SE-B +919881314340 
 - 🌐 Follow Us on Social Media:
 * Instagram: https://www.instagram.com/gdg_nkocet/
 * LinkedIn: https://www.linkedin.com/company/gdg-nkocet/
 
-We’re grateful for your support and look forward to hosting more workshops and events in the future. Keep learning, keep growing, and stay connected with us! 🚀
-
-# Best Regards,
-# Ghanasham A. Irashetti 
+## Ghanasham A. Irashetti 
 - Workshop Speaker | GDG Co-Organizer
 - 🌐 Follow Us on Social Media:
 - LinkedIn : https://www.linkedin.com/in/ghansham-irshetti/
 - Instagram : https://www.instagram.com/ghansham_2004/
+
+We’re grateful for your support and look forward to hosting more workshops and events in the future. Keep learning, keep growing, and stay connected with us! 🚀
+
+## 🎉 IMP-Task for Day-2 Project: Complete the tasks below and win exciting prizes! 🎉
+
+```
+    1. Add a feature of typing indicator when the bot is responding to the user. 💬
+    2. Enable sending messages through the send button and by pressing the Enter key. 📩
+    3. Add any new features you want to enhance this chatbot. 🚀
+
+    🏆 Steps to claim your prize:
+    1. Create the project.
+    2. Post about it on LinkedIn with the hashtags #gdg and #gdgnkocet + tag to our GDG NKOCET and Me in the post.
+       - My Profile Link : https://www.linkedin.com/in/ghansham-irshetti/
+       - GDG NKOCET Profile Link : https://www.linkedin.com/company/gdg-nkocet/
+    3. Tag me in your post to get an exciting prize! 🏅
+
+    What is the prize for this project?
+    1. A shout-out on my LinkedIn profile from GDG NKOCET
+    2. A detail notes of web development + DSA.
+    Happy Coding! 😇
+```
 
 
 ## 🎉 **Thank You!**  
