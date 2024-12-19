@@ -12,7 +12,7 @@ The project consists of the following files:
 
 ## Features
 
-- **Chat Interface**: A user-friendly  chat-container includes (header,chat-body,chat-footer) with send and receive messages.
+- **Chat Interface**: A user-friendly chat-container includes (header,chat-body,chat-footer) with send and receive messages.
 - **Gemini API Integration**: Powered by Gemini API to provide intelligent responses to user queries.
 - **Responsive Design**: Built with responsive design to ensure a seamless experience across devices.
 
@@ -23,13 +23,13 @@ You can view the live version of the chatbot by opening the `index.html` file in
 ## How to Use
 
 1. Clone the repository to your local machine:
-    ```bash
-    git clone <repository-url>
-    ```
+   ```bash
+   git clone https://github.com/Ghanasham2004/Web-Dev-Workshop.git
+   ```
 2. Navigate to the project directory:
-    ```bash
-    cd Project
-    ```
+   ```bash
+   cd Day-2 && cd Project
+   ```
 3. Open the `index.html` file in your browser to start using the chatbot.
 
 ## Setup and Installation
@@ -49,60 +49,39 @@ You can view the live version of the chatbot by opening the `index.html` file in
 In `script.js`, the user input is sent to the Gemini API, which processes the query and sends a response back. The response is displayed in the chat window for the user to see.
 
 Example:
+
 ```javascript
-    const response = await fetch(
-      "https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-latest:generateContent?key=" +
-        API_KEY,
-      {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
+const response = await fetch(
+  "https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-latest:generateContent?key=" +
+    API_KEY,
+  {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({
+      contents: [
+        {
+          parts: [{ text: message }],
+          role: "user",
         },
-        body: JSON.stringify({
-          contents: [
-            {
-              parts: [{ text: message }],
-              role: "user",
-            },
-          ],
-        }),
-      }
-    );
+      ],
+    }),
+  }
+);
 
-    const data = await response.json();
-    console.log(data);
+const data = await response.json();
+console.log(data);
 
-    // extract and clean the response
-    const apiResponse = data.candidates[0].content.parts[0].text.replace(
-      /\*\*(.*?)\*\*/g,
-      "$1"
-    );
-    // push response in messages array
-    messages.push({ sender: "bot", message: apiResponse });
-    // and render again all messages 
-    renderMessages();
-```
-
----
-
-# 🎉 Task for Day-2 Project: Complete the tasks below and win exciting prizes! 🎉
-```
-    1. Add a feature of typing indicator when the bot is responding to the user. 💬
-    2. Enable sending messages through the send button and by pressing the Enter key. 📩
-    3. Add any new features you want to enhance this chatbot. 🚀
-
-    🏆 Steps to claim your prize:
-    1. Create the project.
-    2. Post about it on LinkedIn with the hashtags #gdg and #gdgnkocet + tag to our GDG NKOCET and Me in the post. 
-       - My Profile Link : https://www.linkedin.com/in/ghansham-irshetti/
-       - GDG NKOCET Profile Link : https://www.linkedin.com/company/gdg-nkocet/
-    3. Tag me in your post to get an exciting prize! 🏅
-
-    What is the prize for this project?
-    1. A shout-out on my LinkedIn profile from GDG NKOCET
-    2. A detail notes of web development + DSA.
-
-    Happy Coding! 😇
+// extract and clean the response
+const apiResponse = data.candidates[0].content.parts[0].text.replace(
+  /\*\*(.*?)\*\*/g,
+  "$1"
+);
+// push response in messages array
+messages.push({ sender: "bot", message: apiResponse });
+// and render again all messages
+renderMessages();
 ```
 
 ## Technologies Used
@@ -112,7 +91,28 @@ Example:
 - **JavaScript**: For adding dynamic functionality and API interaction.
 - **Gemini API**: For processing user input and generating responses.
 
-
 ## Contact
 
 For any inquiries, feel free to reach out to me at irashettg@gmail.com
+
+---
+
+# 🎉 Task for Day-2 Project: Complete the tasks below and win exciting prizes! 🎉
+
+```
+    1. Add a feature of typing indicator when the bot is responding to the user. 💬
+    2. Enable sending messages through the send button and by pressing the Enter key. 📩
+    3. Add any new features you want to enhance this chatbot. 🚀
+
+    🏆 Steps to claim your prize:
+    1. Create the project.
+    2. Post about it on LinkedIn with the hashtags #gdg and #gdgnkocet + tag to our GDG NKOCET and Me in the post.
+       - My Profile Link : https://www.linkedin.com/in/ghansham-irshetti/
+       - GDG NKOCET Profile Link : https://www.linkedin.com/company/gdg-nkocet/
+    3. Tag me in your post to get an exciting prize! 🏅
+
+    What is the prize for this project?
+    1. A shout-out on my LinkedIn profile from GDG NKOCET
+    2. A detail notes of web development + DSA.
+    Happy Coding! 😇
+```
