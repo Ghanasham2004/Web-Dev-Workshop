@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Day 1 Workshop</title>
+  <style>
+    /* Style for h2 elements */
+    h2 {
+      color: #6600b9;
+    }
+
+    /* Style for paragraph elements with class 'paragraph' */
+    .paragraph {
+      color: #ff00bb;
+      font-size: 20px;
+    }
+
+    /* Style for list items inside unordered lists */
+    ul li {
+      color: #ff0000;
+      width: 100px;
+      height: 20px;
+      border: 1px solid red;
+      margin: 5px;
+    }
+
+    /* Style for elements with class 'bg-red' */
+    .bg-red {
+      background-color: rgb(51, 0, 255);
+      color: white;
+    }
+
+    /* Style for element with id 'unique' */
+    #unique {
+      background-color: yellow;
+    }
+
+    /* Style for even list items inside ordered lists */
+    ol li:nth-child(even) {
+      color: green;
+      background: #adadad;
+    }
+
+    /* Style for odd list items inside ordered lists */
+    ol li:nth-child(odd) {
+      color: blue;
+      background: #f0f0f0;
+    }
+
+    /* Style for table elements */
+    table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+
+    /* Style for table headers */
+    th {
+      background-color: #f2f2f2;
+    }
+
+    /* Style for table data */
+    td {
+      text-align: center;
+      padding: 8px;
+    }
+
+    /* Style for div elements */
+    div {
+      background-color: #f2f2f2;
+      padding: 20px;
+      margin: 20px;
+    }
+
+    /* Style for span elements */
+    span {
+      font-weight: bold;
+    }
+
+    /* Style for audio and video elements */
+    audio,
+    video {
+      margin: 10px;
+    }
+
+    /* Style for iframe elements */
+    iframe {
+      margin: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Displaying a simple text -->
+  hello world
+
+  <!-- Heading tags in HTML -->
+  <h1 style="color: red; background-color: yellow">Heading 1</h1>
+  <h2>Heading 2</h2>
+  <h3>Heading 3</h3>
+  <h4>Heading 4</h4>
+  <h5>Heading 5</h5>
+  <h6>Heading 6</h6>
+
+  <!-- Paragraph tag -->
+  <p class="paragraph">This is a paragraph tag</p>
+
+  <!-- Link tag -->
+  <a href="https://www.google.com" target="_blank">This is a link</a>
+
+  <!-- Unordered list -->
+  <h1>List Type 1 - Unordered List</h1>
+  <ul>
+    <li class="i-1">Item 1</li>
+    <li class="i-1" id="unique">Item 2</li>
+    <li class="i-1 bg-red">Item 3</li>
+  </ul>
+
+  <!-- Ordered list -->
+  <h1>List Type 2 - Ordered List</h1>
+  <ol>
+    <li>Item 1</li>
+    <li>Item 2</li>
+    <li>Item 3</li>
+    <li>Item 4</li>
+  </ol>
+
+  <!-- Image tag -->
+  <img src="./GDG WEB DEV WORKSHOP BANNER.jpg" alt="Google Logo" width="200" height="270" />
+
+  <!-- Form tag -->
+  <h1>Form Example</h1>
+  <form action="/submit" method="post">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name"><br><br>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email"><br><br>
+    <input type="submit" value="Submit">
+  </form>
+
+  <!-- Table tag -->
+  <h1>Table Example</h1>
+  <table border="1">
+    <tr>
+      <th>Firstname</th>
+      <th>Lastname</th>
+      <th>Age</th>
+    </tr>
+    <tr>
+      <td>John</td>
+      <td>Doe</td>
+      <td>25</td>
+    </tr>
+    <tr>
+      <td>Jane</td>
+      <td>Doe</td>
+      <td>24</td>
+    </tr>
+  </table>
+
+  <!-- Div tag -->
+  <h1>Div Example</h1>
+  <div style="border: 1px solid black; padding: 10px;">
+    This is a div element.
+  </div>
+
+  <!-- Span tag -->
+  <h1>Span Example</h1>
+  <p>This is a paragraph with a <span style="color: blue;">span</span> element.</p>
+
+  <!-- Audio tag : Used to embed sound content in a webpage-->
+  <h1>Audio Example</h1>
+  <audio controls>
+    <source src="./audio-file.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+
+  <!-- Video tag -->
+  <h1>Video Example</h1>
+  <video width="320" height="240" controls>
+    <source src="./video_file.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+  <!-- Iframe tag : Displaying a webpage inside another webpage-->
+  <h1>Iframe Example</h1>
+  <iframe src="https://www.example.com" width="300" height="200" title="Iframe Example"></iframe>
+</body>
+
+</html>

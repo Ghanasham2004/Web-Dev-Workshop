@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Functions</title>
+</head>
+
+<body>
+  <script language="javascript" type="text/javascript">
+    // Function Declaration - type 1
+    // This is a standard function declaration.
+    function standardFunction() {
+      document.write("This is a standard function.<br/>");
+    }
+    standardFunction();
+
+    // Function Expression - type 2
+    // Functions can also be defined as expressions and assigned to variables.
+    var functionExpression = function () {
+      document.write("This is a function expression.<br/>");
+    };
+    functionExpression();
+
+    // Arrow Function - type 3
+    // Arrow functions provide a shorter syntax and lexically bind the 'this' value.
+    var arrowFunction = () => {
+      document.write("This is an arrow function.<br/>");
+    };
+    arrowFunction();
+
+    // Async and Await
+    // Async functions allow the use of await which pauses the execution until the promise resolves.
+    async function asyncFunction() {
+      document.write("Started async function.<br/>");
+      await new Promise(resolve => setTimeout(resolve, 2000)); // Pauses for 2 seconds
+      document.write("Async function resumed after 2 seconds.<br/>");
+    }
+
+    // Calling the async function
+    asyncFunction();
+  </script>
+</body>
+
+</html>

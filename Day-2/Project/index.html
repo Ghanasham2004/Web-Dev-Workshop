@@ -1,0 +1,32 @@
+<html>
+  <head>
+    <title>GeminiAi ChatBot</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <main>
+      <div class="chat-container">
+        <div class="chat-header">
+          <h3>GeminiAi ChatBot</h3>
+          <button>Close</button>
+        </div>
+        <div class="chat-body">
+          <div class="message bot">Hi there! How can I help you today?</div>
+          <div class="message user">
+            I need help with my order status please.
+          </div>
+        </div>
+        <div class="chat-footer">
+          <input
+            type="text"
+            placeholder="Type a message..."
+            id="input-message"
+            onkeypress="handleKeyPress(event)"
+          />
+          <button onclick="sendMessage()" id="send-btn">Send</button>
+        </div>
+      </div>
+    </main>
+    <script src="./script.js"></script>
+  </body>
+</html>

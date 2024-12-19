@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>JS Demo</title>
+</head>
+
+<body>
+  <button onclick="showAlert()">Click me</button>
+
+  <script type="text/javascript">
+    // Output to the document
+    document.write("<h1>Hello World</h1>");
+
+    // Variables and values
+    var variableName = "d <br/>";
+    document.write(variableName);
+    variableName = "new - d<br/>";
+    document.write(variableName);
+
+    // Constants
+    const firstName = "Sham";
+    const lastName = "Ghanasham<br/>";
+    document.write(firstName);
+    document.write(lastName);
+
+    // Function to sum two values
+    function sum() {
+      var value1 = 10;
+      var value2 = 20;
+      return value1 + value2;
+    }
+    document.write("Sum: " + sum() + "<br/>");
+
+    // Switch statement
+    var day = 4;
+    switch (day) {
+      case 1:
+        document.write("Monday<br/>");
+        break;
+      case 2:
+        document.write("Tuesday<br/>");
+        break;
+      case 3:
+        document.write("Wednesday<br/>");
+        break;
+      case 4:
+        document.write("Thursday<br/>");
+        break;
+      case 5:
+        document.write("Friday<br/>");
+        break;
+      case 6:
+        document.write("Saturday<br/>");
+        break;
+      case 7:
+        document.write("Sunday<br/>");
+        break;
+      default:
+        document.write("Invalid day<br/>");
+    }
+
+    // For loop
+    for (var i = 1; i <= 10; i++) {
+      document.write(i + "<br/>");
+    }
+
+    // While loop
+    var i = 1;
+    while (i <= 10) {
+      document.write("i: " + i + "<br/>");
+      i++;
+    }
+
+    // Arrays
+    var fruits = ["Apple", "Banana", "Cherry"];
+    for (var j = 0; j < fruits.length; j++) {
+      document.write(fruits[j] + "<br/>");
+    }
+
+    // Objects
+    var person = {
+      firstName: "John",
+      lastName: "Doe",
+      age: 25
+    };
+    document.write("Name: " + person.firstName + " " + person.lastName + "<br/>");
+    document.write("Age: " + person.age + "<br/>");
+
+    // Event handling
+    function showAlert() {
+      alert("Button clicked!");
+    }
+  </script>
+
+</body>
+
+</html>
